@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng Theo Dõi Học Viên Hạng C1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>BẢNG THEO DÕI HỌC VIÊN HẠNG C1</h2>
+  <form id="form-add">
+    <input type="text" id="ms" placeholder="Mã học viên" required>
+    <input type="text" id="ten" placeholder="Tên học viên" required>
+    <input type="date" id="ngaythang" required>
+    <button type="submit">Thêm học viên</button>
+  </form>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Ngày tháng</th>
+        <th>MS Học viên</th>
+        <th>Tên Học viên</th>
+        <th>Số km phải chạy</th>
+        <th>Ngày 1</th>
+        <th>Ngày 2</th>
+        <th>Ban đêm</th>
+        <th>Số km còn lại</th>
+        <th>Hoàn thành ban đêm</th>
+        <th>Hoàn thành ĐẠT</th>
+        <th>Xóa</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <button onclick="printReport()">In báo cáo</button>
+  <script src="app.js"></script>
+</body>
+</html>
